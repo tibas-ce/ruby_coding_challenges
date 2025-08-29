@@ -12,3 +12,9 @@ Atividades propostas pela mentoria SPD(Super Densenvolvedor)
 <a href="https://www.geeksforgeeks.org/dsa/bubble-sort-algorithm/" target="_blank">
   <button>Ir para o site</button>
 </a>
+
+3 - Counting sort - Classificação por contagem
+
+<a href="https://www.geeksforgeeks.org/dsa/counting-sort/" target="_blank">
+  <button>Ir para o site</button>
+</a>
