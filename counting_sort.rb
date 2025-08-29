@@ -51,4 +51,4 @@ resposta = counting_sort(lista)
 puts("Lista números")
 puts lista.inspect
 puts("Lista quantas vezes cada número se repete em lista números")
-puts(resposta)
+puts resposta.inspect
