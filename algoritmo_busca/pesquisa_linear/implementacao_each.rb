@@ -7,6 +7,7 @@ array_ultimo = [10, 25, 23, 33, 190, 43]
 array_sem = [10, 25, 56, 33, 190, 5]
 alvo = 43
 
+# busca_linear com .each
 def busca_linear (array, alvo)
   indice = 0
   # Percorre cada elemento do array
@@ -23,9 +24,9 @@ def busca_linear (array, alvo)
 end
 
 # teste
-reposta = busca_linear(array, alvo)
-reposta2 = busca_linear(array_primeiro, alvo)
-reposta3 = busca_linear(array_ultimo, alvo)
-reposta4 = busca_linear(array_sem, alvo)
+resposta = busca_linear(array, alvo)
+resposta2 = busca_linear(array_primeiro, alvo)
+resposta3 = busca_linear(array_ultimo, alvo)
+resposta4 = busca_linear(array_sem, alvo)
 
-puts(reposta, reposta2, reposta3, reposta4)
+puts(resposta, resposta2, resposta3, resposta4)
