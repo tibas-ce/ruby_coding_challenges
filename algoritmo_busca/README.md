@@ -59,6 +59,7 @@ ruby test_implementacao.rb
 # Linear Search  
 cd pesquisa_linear
 ruby test_implementacao.rb
+```
 
 ---
 

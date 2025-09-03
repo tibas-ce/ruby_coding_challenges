@@ -59,6 +59,7 @@ target = 7
 
 # Passo 3: meio = 3 (index 3), array[3] = 7
 # 7 == 7, encontrou! Retorna index 3
+```
 
 ---
 
@@ -72,6 +73,7 @@ ruby test_implementacao.rb
 # Linear Search  
 cd pesquisa_linear
 ruby test_implementacao.rb
+```
 
 ---
 
@@ -137,6 +139,7 @@ target_nao_existe
 # Casos especiais
 array_com_duplicatas
 array_muito_grande   # 1M+ elementos
+```
 
 ---
 
@@ -179,6 +182,7 @@ mid = low + (high - low) / 2
 
 # ✅ Ruby não tem overflow de int, mas é boa prática
 mid = (low + high) >> 1  # divisão por 2 com bit shift
+```
 
 ---
 
