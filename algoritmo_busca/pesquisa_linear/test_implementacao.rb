@@ -1,7 +1,7 @@
 # Habilitando biblioteca de testes
 require "minitest/autorun"
 
-# Carregar arquivos Ruby que estão no projeto.
+# Carregar arquivos Ruby que estão no projeto, relativamente ao arquivo 
 require_relative "implementacao_each"
 require_relative "implementacao_each_with_index"
 
