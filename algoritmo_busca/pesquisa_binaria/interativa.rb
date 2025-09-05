@@ -1,14 +1,5 @@
 # Pesquisa binária interativa - mais informações no README
 
-# Regra número um da pesquisa binária é: a lista onde você vai procurar precisa estar ordenada.
-lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
-lista_sem = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15]
-alvo = 11
-alvo_inicio = 2
-alvo_meio = 8
-alvo_fim = 14
-
-
 def pesquisa_binaria_interativa (array, target)
     # Marcadores de inicio e fim
     # A pesquisa binária opera com os índices, não com os valores dos elementos
@@ -32,10 +23,3 @@ def pesquisa_binaria_interativa (array, target)
     # Se o loop terminar sem encontrar o alvo, retorna nil para indicar falha. (OBS. outra opção comum é retornar -1)
     return nil
 end
-
-# Testes
-puts(pesquisa_binaria_interativa(lista, alvo))
-puts(pesquisa_binaria_interativa(lista, alvo_inicio))
-puts(pesquisa_binaria_interativa(lista, alvo_meio))
-puts(pesquisa_binaria_interativa(lista, alvo_fim))
-puts(pesquisa_binaria_interativa(lista_sem, alvo))

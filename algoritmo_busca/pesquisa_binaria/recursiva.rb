@@ -1,12 +1,6 @@
 # Pesquisa binária recursiva - mais informações no README
 
 # Regra número um da pesquisa binária é: a lista onde você vai procurar precisa estar ordenada.
-lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
-lista_sem = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15]
-alvo = 11
-alvo_inicio = 2
-alvo_meio = 8
-alvo_fim = 14
 
 def pesquisa_binaria_recursiva (array, target, start, fim)
     # Condição para caso os marcadores se cruzem, indica falha mostrando que alvo não é encontrado
@@ -37,10 +31,3 @@ def chamando_pesquisa (array, target)
     # Chamando a função recebendo todos os valores, marcadores diretamente da função chamando_pesquisa, e array e target vindos do usuário
     pesquisa_binaria_recursiva(array, target, inicio, fim)
 end
-
-# teste
-puts(chamando_pesquisa(lista, alvo))
-puts(chamando_pesquisa(lista, alvo_inicio))
-puts(chamando_pesquisa(lista, alvo_meio))
-puts(chamando_pesquisa(lista, alvo_fim))
-puts(chamando_pesquisa(lista_sem, alvo))
