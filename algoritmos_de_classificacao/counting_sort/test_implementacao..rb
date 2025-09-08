@@ -68,6 +68,31 @@ class TestCouting_sort < Minitest::Test
   end
 
   def test_array_elementos_iguais
-    
+    resultado = counting_sort(@arrays[:iguais])
+    # Resultado deve ter mesmo tamanho. Todos elementos devem continuar iguais. Não deve gerar erro no algoritmo de contagem.
+    assert_equal @arrays[:iguais], resultado
+  end
+
+  def test_array_comeca_zero
+    # Cria a variável
+    resultado = nil
+    # O assert_silent verifica que não há erros durante a execução. Especificamente importante para o Counting Sort, pois zero é usado como índice no array de contagem e poderia gerar IndexError ou outros problemas.
+    assert_silent do
+      resultado = counting_sort(@arrays[:zero])
+    end
+    # Verifica se o couting_sort fez a ordenação corretamente
+    assert_equal @arrays[:zero].sort, resultado
+  end
+
+  def test_array_pequenos_valores
+    resultado = counting_sort(@arrays[:menor_valores])
+    # O resultado deve ser = ao array menor_valores ordenado. Verificar eficiência em cenário otimizado.Duplicatas devem estar na ordem correta
+    assert_equal @arrays[:menor_valores].sort, resultado
+  end
+
+  def test_array_valores_altos
+    resultado = counting_sort(@arrays[:maior_valores])
+    # O resultado devem ser iguais, garantido pelo .sort. Verificar se funciona com "buracos" na sequência - se ordena corretamente, significa que lidou com os gaps. Testar se array de contagem é criado corretamente  
+    assert_equal @arrays[:maior_valores].sort, resultado
   end
 end
