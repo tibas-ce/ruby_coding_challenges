@@ -1,5 +1,7 @@
 # Minimum spanning (abrangência mínima) - Mais informações readme
+# Chamando a class Union_find
 require_relative "union_find"
+
 def minimum_spanning (array)
   array_MST = []
 
