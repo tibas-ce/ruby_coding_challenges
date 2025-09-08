@@ -5,6 +5,8 @@ lista = [3, 2, 4, 4, 1, 2, 3, 5, 1, 3]
 
 # função de classificação por contagem
 def counting_sort (array)
+    # O array.empty? e método que retorna true se o array não tem elementos. Se o array é vazio, você já retorna [] sem tentar processar nada.
+    return [] if array.empty?
     # .first serve para pegar o primeiro elemento de um array
     maior_valor = array.first
 
