@@ -1,4 +1,4 @@
-# Missing character () - Mais informações no README
+# Missing character (personagem ausente) - Mais informações no README
 
 # Set é uma coleção sem duplicatas. Ele vem da biblioteca padrão do Ruby (require 'set').Internamente funciona parecido com um hash → buscas, inserções e exclusões são rápidas.
 require "set"
