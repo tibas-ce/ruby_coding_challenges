@@ -1,4 +1,4 @@
-# Find three (buscar três) - Mias informações README
+# Find three (buscar três) - Mais informações README
 
 def find_three (array)
   # Infinity representa menos infinito matematicamente. É um valor numérico especial da classe Float. Ele é menor do que qualquer outro número real.
