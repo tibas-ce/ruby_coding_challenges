@@ -29,6 +29,7 @@ def days_month (year, month)
       return 28
     end
   else
+    # Validação para meses inválidos
     raise ArgumentError, "Mês inválido: #{month}"
   end
 end
