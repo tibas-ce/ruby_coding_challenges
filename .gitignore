@@ -1,0 +1,110 @@
+# Ruby específico
+*.gem
+*.rbc
+/.config
+/coverage/
+/InstalledFiles
+/pkg/
+/spec/reports/
+/spec/examples.txt
+/test/tmp/
+/test/version_tmp/
+/tmp/
+
+# Bundler
+/vendor/bundle
+/.bundle/
+Gemfile.lock
+
+# RubyMine e IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# VS Code
+.vscode/
+
+# rbenv
+.ruby-version
+
+# RVM
+.rvmrc
+
+# Arquivos de sistema
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+log/
+
+# Arquivos temporários
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Arquivos de backup
+*.bak
+*.backup
+
+# Arquivos de entrada/saída para testes de algoritmos
+input.txt
+output.txt
+test_input.txt
+test_output.txt
+dados_teste.txt
+entrada.txt
+saida.txt
+*.in
+*.out
+
+# Arquivos de benchmark e profiling
+benchmark_results.txt
+profile_results.txt
+*.prof
+
+# Arquivos de dados grandes para estruturas de dados
+*.csv
+*.json
+*.xml
+dados/
+dataset/
+large_data/
+
+# Configurações locais
+.env
+.env.local
+config.local.rb
+
+# Cache do IRB
+.irb_history
+
+# YARD documentation
+.yardoc/
+doc/
+
+# SimpleCov
+coverage/
+
+# Byebug
+.byebug_history
+
+# Pry
+.pry_history
+
+# RSpec
+.rspec_status
+
+# Arquivos específicos de algoritmos
+# Descomente se necessário:
+# algoritmos_compilados/
+# resultados_execucao/
+# tempo_execucao.txt
