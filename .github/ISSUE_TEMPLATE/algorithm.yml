@@ -1,12 +1,12 @@
-name: Novo Algoritmo
-description: Ciclo: algoritmo → teste → documentação
+name: "Novo Algoritmo"
+description: "Ciclo: algoritmo → teste → documentação"
 labels: ["algorithms", "tests", "documentation"]
 body:
   - type: checkboxes
     id: fluxo
     attributes:
-      label: Fluxo
+      label: "Fluxo"
       options:
-        - label: Implementar algoritmo
-        - label: Criar testes na mesma pasta
-        - label: Adicionar/atualizar documentação
+        - label: "Implementar algoritmo"
+        - label: "Criar testes na mesma pasta"
+        - label: "Adicionar/atualizar documentação"
