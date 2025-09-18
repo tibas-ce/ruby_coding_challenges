@@ -36,13 +36,3 @@ def find_future_efficient (array, consult_date)
   end
 
 end
-
-# testes
-
-arr = ["22/4/1233", "1/3/633", "23/5/56645"]
-
-dc = "1/1/1000"
-
-result = find_future_efficient(arr, dc)
-
-puts result.inspect
