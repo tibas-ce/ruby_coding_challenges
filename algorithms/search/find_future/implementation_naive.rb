@@ -32,18 +32,12 @@ def find_future_naive (array, consult_date)
   end
 
   # Se future_date for menor que consult_date
-  if future_date < consult_date
+  if array.include?(consult_date.strftime("%d/%m/%Y"))
+    return consult_date
+  elsif future_date < consult_date
     # Retorne -1
     return -1
   else
     return future_date
   end 
 end
-
-#teste
-dates = ["22/4/1233", "1/3/633", "23/5/56645"]
-consult_date = "1/1/1000"
-
-resultado = find_future_naive(dates, consult_date)
-
-puts resultado.inspect
