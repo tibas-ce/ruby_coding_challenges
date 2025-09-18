@@ -50,7 +50,7 @@ Atualmente estou focando em:
 ## Contato
 
 Se quiser trocar ideias sobre Ruby ou desafios de programação:  
-📧 Email: seu_email@exemplo.com  
+📧 Email: tiberio.ferreiracs@gmail.com  
 💼 LinkedIn: [Tibério dos Santos Ferreira](https://www.linkedin.com/in/tiberio-ferreira/)  
 
 ---
