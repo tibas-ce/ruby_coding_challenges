@@ -8,14 +8,17 @@ def find_future_efficient (array, consult_date)
   # Converte strings para objetos Date (ignora datas inválidas)
   array = array.map do |d| 
     begin
-      Date.strptime(d, "%d/%m/%Y")
+      date = Date.strptime(d, "%d/%m/%Y")
+      # Limita o intervalo de anos 0.. 9999
+      date.year.between?(0, 9999) ? date : nil
     rescue Date::Error
       nil
     end  
   end  
 
   # Ordena as datas para garantir que a busca binária funcione corretamente
-  array = array.sort!
+  # .compact remove nils
+  array = array.compact.sort!
 
   # Converte a data consultada
   consult_date = Date.strptime(consult_date, "%d/%m/%Y")
@@ -23,14 +26,15 @@ def find_future_efficient (array, consult_date)
   # Busca índice da primeira data maior ou igual à consult_date
   index = binary_search_next(array, consult_date)
 
-  # Retorna a data encontrada ou nil se não houver futura
-  if index && index < array.length
-    future_date = array[index]
+  # Se consult_date existir no array, retornamos ela. Se não retorna a data encontrada ou nil se não houver futura
+  if array.include?(consult_date)
+    consult_date
+  elsif index && index < array.length
+    array[index]
   else
-    future_date = nil
+    nil
   end
 
-  return future_date
 end
 
 # testes
