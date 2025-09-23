@@ -1,4 +1,4 @@
-# Find maximum sum possible equal sum three stacks (Máximo de soma igual de três pilhas) - Mais informações no README
+# Find maximum sum possible equal sum three stacks - greedy (Máximo de soma igual de três pilhas - guloso) - Mais informações no README
 # Abordagem Gulosa (Greedy)
 # A estratégia aqui é sempre fazer a melhor escolha no momento:
 # Para igualar as somas das pilhas, a maneira mais rápida é reduzir a pilha que tem o valor mais alto.
