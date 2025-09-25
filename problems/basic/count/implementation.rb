@@ -28,12 +28,13 @@ def count (phrase)
   end
   
   # Imprimindo resultado
-  result = "A frase: #{phrase}.\n Letras maiúsculas: #{count_uppercase}\n Letras minúsculas: #{count_lowercase}\n Números: #{count_number}\n Caracteres especiais: #{count_special}"
+  #result = "A frase: #{phrase}.\n Letras maiúsculas: #{count_uppercase}\n Letras minúsculas: #{count_lowercase}\n Números: #{count_number}\n Caracteres especiais: #{count_special}"
 
-  return result 
+  # Retornando os contadores em um hash, assim testamos diretamente os contadores de maiúsculas, minúsculas, números e caracteres especiais.
+  return {
+    uppercase: count_uppercase,
+    lowercase: count_lowercase,
+    numbers: count_number,
+    special: count_special
+  }
 end
-
-# teste
-phrase = "1jasdfjAJuioueAQ@#*(112)"
-
-puts count(phrase)
