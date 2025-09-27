@@ -1,6 +1,6 @@
 # Remove the element (remove o elemento) - Mais informações README
 
-# FUnção que remove do array todo elemento igual a target
+# Função que remove do array todo elemento igual a target
 def remove_element (array, target)
   # Usado para rastrear a posição do próximo elemento valido
   collector = 0
@@ -18,11 +18,3 @@ def remove_element (array, target)
   
   return collector
 end
-
-# Testes
-numbers = [3, 2, 2, 3, 4, 5, 6, 3]
-target = 3
-
-result = remove_element(numbers, target)
-
-puts result
