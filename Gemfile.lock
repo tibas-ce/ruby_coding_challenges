@@ -1,3 +1,8 @@
+PATH
+  remote: .
+  specs:
+    ruby_coding_challenges (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -13,6 +18,7 @@ GEM
       reline (>= 0.4.2)
     language_server-protocol (3.17.0.5)
     logger (1.7.0)
+    minitest (5.25.4)
     pp (0.6.2)
       prettyprint
     prettyprint (0.2.0)
@@ -39,7 +45,9 @@ PLATFORMS
 
 DEPENDENCIES
   debug
+  minitest (~> 5.0)
   ruby-lsp
+  ruby_coding_challenges!
 
 BUNDLED WITH
    2.7.1
