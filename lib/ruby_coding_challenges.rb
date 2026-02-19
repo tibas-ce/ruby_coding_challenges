@@ -1,0 +1,3 @@
+require_relative "ruby_coding_challenges/version"
+require_relative "ruby_coding_challenges/binary_search/iterative"
+require_relative "ruby_coding_challenges/binary_search/recursive"
