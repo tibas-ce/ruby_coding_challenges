@@ -1,3 +1,5 @@
 require_relative "ruby_coding_challenges/version"
 require_relative "ruby_coding_challenges/binary_search/iterative"
 require_relative "ruby_coding_challenges/binary_search/recursive"
+require_relative "ruby_coding_challenges/linear_search/implementation_each_with_index"
+require_relative "ruby_coding_challenges/linear_search/implementation_each"
