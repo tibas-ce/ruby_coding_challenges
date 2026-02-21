@@ -1,4 +1,4 @@
-# Linear search (busca linear) - Mais informações readme
+# Linear search (busca linear) - Mais informações docs/Linear_search.md
 
 module RubyCodingChallenges
     module LinearSearch
