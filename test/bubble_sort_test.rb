@@ -1,8 +1,4 @@
-# Habilitando biblioteca de testes
-require "minitest/autorun"
-
-# Carregar arquivos Ruby que estão no projeto.
-require_relative "implementacao"
+require_relative "test_helper.rb"
 
 class TestBubbleSort < Minitest::Test
 
@@ -19,19 +15,19 @@ class TestBubbleSort < Minitest::Test
   end
 
   def test_ordenado
-    assert_equal (1..25).to_a, bubble_sort(@arrays[:ordenado]) 
+    assert_equal (1..25).to_a, RubyCodingChallenges::BubbleSort.search(@arrays[:ordenado]) 
   end
 
   def test_inverso
-    assert_equal (1..25).to_a, bubble_sort(@arrays[:inverso]) 
+    assert_equal (1..25).to_a, RubyCodingChallenges::BubbleSort.search(@arrays[:inverso]) 
   end
 
   def test_vazio
-    assert_equal [], bubble_sort(@arrays[:vazio]) 
+    assert_equal [], RubyCodingChallenges::BubbleSort.search(@arrays[:vazio]) 
   end
 
   def test_um_elemento
-    resultado = bubble_sort(@arrays[:um])
+    resultado = RubyCodingChallenges::BubbleSort.search(@arrays[:um])
     # assert_kind_of verifica se um objeto é de um determinado tipo (classe ou módulo). Assim, não importa se o array é [2], [4] ou [999], o teste passa.
     assert_kind_of Array, resultado # garante que retornou um array
     assert_equal 1, resultado.length # garante que o array só tem um elemento
@@ -39,10 +35,10 @@ class TestBubbleSort < Minitest::Test
 
   # Casos especiais
   def test_elementos_duplicados
-    assert_equal [1, 2, 2, 3, 4, 5, 6, 7, 7, 8, 9], bubble_sort(@arrays[:duplicado])
+    assert_equal [1, 2, 2, 3, 4, 5, 6, 7, 7, 8, 9], RubyCodingChallenges::BubbleSort.search(@arrays[:duplicado])
   end
 
   def test_elementos_iguais
-    assert_equal @arrays[:iguais], bubble_sort(@arrays[:iguais])
+    assert_equal @arrays[:iguais], RubyCodingChallenges::BubbleSort.search(@arrays[:iguais])
   end
 end
