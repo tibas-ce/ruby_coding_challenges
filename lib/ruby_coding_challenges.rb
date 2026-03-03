@@ -5,3 +5,4 @@ require_relative "ruby_coding_challenges/linear_search/implementation_each_with_
 require_relative "ruby_coding_challenges/linear_search/implementation_each"
 require_relative "ruby_coding_challenges/bubble_sort/bubble_sort"
 require_relative "ruby_coding_challenges/minimum_product/minimum_product"
+require_relative "ruby_coding_challenges/maximize_array/maximize_array"
